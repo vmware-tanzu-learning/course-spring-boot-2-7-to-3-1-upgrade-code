@@ -3,7 +3,6 @@ package example.cashcard;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import net.minidev.json.JSONArray;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,7 +23,6 @@ class CashCardApplicationTests {
     TestRestTemplate restTemplate;
 
     @Test
-    @Disabled
     void shouldReturnACashCardWhenDataIsSaved() {
         ResponseEntity<String> response = restTemplate
                 .withBasicAuth("sarah1", "abc123")
@@ -36,7 +34,7 @@ class CashCardApplicationTests {
         assertThat(id).isEqualTo(99);
 
         Double amount = documentContext.read("$.amount");
-        assertThat(amount).isEqualTo(12.45);
+        assertThat(amount).isEqualTo(123.45);
     }
 
     @Test
