@@ -24,3 +24,7 @@ _Result:_ code compiles without errors or warnings and all tests pass
 - Add `@Configuration` annotation, which is removed in Spring Security 6.0
 
 _Result:_ code compiles without errors or warnings and all tests pass (no skipped tests)!
+
+## Upgrade Spring Boot Parent Version
+
+- Code Compiles, No Errors or Warnings
