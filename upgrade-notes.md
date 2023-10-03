@@ -54,3 +54,15 @@ _Result:_ code compiles without errors or warnings and all tests pass (no skippe
 - Update `csrf` to use the new customizer interface
 
 _Result:_ code compiles without errors or warnings
+
+## Test - Initial Test Execution
+
+_Result:_ code compiles without errors or warnings and all tests pass
+
+## Test Dependency Housekeeping
+
+- ~~Remove explicit version of `aspectj-core`~~
+- Remove explicit `aspectj-core` dependency
+  - It's managed by `spring-boot-starter-test`
+
+_Result:_ code compiles without errors or warnings and all tests pass
