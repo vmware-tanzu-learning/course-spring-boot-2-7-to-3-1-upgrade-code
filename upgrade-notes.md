@@ -28,3 +28,8 @@ _Result:_ code compiles without errors or warnings and all tests pass (no skippe
 ## Upgrade Spring Boot Parent Version
 
 - Code Compiles, No Errors or Warnings
+
+## Remove hard-coded Spring/Spring Boot Dependencies
+
+- remove hardcoded `spring-data-jdbc` version
+- Code Compiles, No Errors or Warnings
