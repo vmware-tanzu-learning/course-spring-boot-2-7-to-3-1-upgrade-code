@@ -19,4 +19,4 @@ spring:
 
   kafka:
     streams:
-      cache-max-size-buffering: 100
+      state-store-cache-max-size: 100

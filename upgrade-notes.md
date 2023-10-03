@@ -66,3 +66,8 @@ _Result:_ code compiles without errors or warnings and all tests pass
   - It's managed by `spring-boot-starter-test`
 
 _Result:_ code compiles without errors or warnings and all tests pass
+
+## Address deprecated Spring Properties
+
+- Property `spring.kafka.streams.cache-max-size-buffering` is deprecated
+  - replaced by `spring.kafka.streams.state-store-cache-max-size`
