@@ -39,3 +39,18 @@ _Result:_ code compiles without errors or warnings and all tests pass (no skippe
 - remove hardcoded `lombok` version
 - Code Compiles, No Errors or Warnings
 - moved hardcoded `itextpdf` version to <properties>
+
+### Upgrade Spring Security Version
+
+- Remove Spring Security version override and upgrade Spring Security to `6.1.3`
+- Spring Security deprecations
+  ```
+  [WARNING] ... src/main/java/example/cashcard/SecurityConfig.java:[24,13] authorizeHttpRequests() in org.springframework.security.config.annotation.web.builders.HttpSecurity has been deprecated and marked for removal
+  [WARNING] ... src/main/java/example/cashcard/SecurityConfig.java:[27,17] and() in org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer.AuthorizationManagerRequestMatcherRegistry has been deprecated and marked for removal
+  [WARNING] ... src/main/java/example/cashcard/SecurityConfig.java:[28,17] csrf() in org.springframework.security.config.annotation.web.builders.HttpSecurity has been deprecated and marked for removal
+  ```
+  - [Migrating to Spring Security 6](https://docs.spring.io/spring-security/reference/6.0/migration/index.html)
+- Update `http.authorizeHttpRequests` to use the new customizer interface
+- Update `csrf` to use the new customizer interface
+
+_Result:_ code compiles without errors or warnings
