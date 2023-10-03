@@ -33,3 +33,9 @@ _Result:_ code compiles without errors or warnings and all tests pass (no skippe
 
 - remove hardcoded `spring-data-jdbc` version
 - Code Compiles, No Errors or Warnings
+
+## Update Non Spring/Spring Boot Managed Dependencies
+
+- remove hardcoded `lombok` version
+- Code Compiles, No Errors or Warnings
+- moved hardcoded `itextpdf` version to <properties>
